@@ -161,7 +161,10 @@ export default class Webcode extends NavigationMixin(LightningElement) {
                          message: 'Contact created Successfully',
                          variant: 'success',
                      }),
-                 );
+                 );    
+                this.template.querySelectorAll('lightning-input').forEach(field => {
+                    field.value = null;
+                }); 
                 
              })
          
@@ -176,12 +179,9 @@ export default class Webcode extends NavigationMixin(LightningElement) {
             );
         });
 
+        
         /*Call fileupload method */
         this.insertUploadedFile();
-     
-        this.template.querySelectorAll('lightning-input').forEach(field => {
-            field.value = null;
-        }); 
    }
 
      /* This method is used to upload a file from system*/

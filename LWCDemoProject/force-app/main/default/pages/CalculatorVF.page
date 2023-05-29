@@ -1,0 +1,19 @@
+<apex:page controller="Calculator">
+    <apex:form >
+    	<apex:pageblock title="Addition">
+        
+            A<apex:inputText value="{!a}" /><br/>
+            B <apex:inputText value="{!b}"/><br/>
+            <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!addLogic}" value="ADD"/>
+                </apex:pageBlockButtons>
+            <apex:actionSupport event="onclick" reRender="OP"/>
+      
+              <b> {!OutPutString} <apex:outputText id="OP" value="{!c}" label="result"></apex:outputText> </b> 
+             
+            
+            
+        </apex:pageblock>
+    
+    </apex:form>
+</apex:page>

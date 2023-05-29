@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Create Account With Contact In LWC" icon-name="standard:account">
+      
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+              <lightning-input label="Name"
+                onchange={handleNameChange} 
+                value={accountName}
+                name="accountName"></lightning-input>
+              </div>
+              <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <lightning-input label="Website"
+                  onchange={handleNameChange} 
+                  value={Website}
+                  name="Website"></lightning-input>
+                </div>
+ 
+              <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                <lightning-input label="First Name" value={firstName} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Last Name" value={lastName} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+           
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Email" value={emailId} onchange={contactChangeVal} ></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Phone" value={Phone} onchange={contactChangeVal} ></lightning-input>
+                </div>
+            </div>
+            
+              <div class="slds-col slds-col-size_12-of-12 slds-p-horizontal_medium slds-m-bottom_medium slds-p-top_medium">
+                <lightning-button label="Save"
+                variant="brand"
+                onclick={saveAction}></lightning-button>
+              </div>
+          
+     </lightning-card>
+    
+</template>

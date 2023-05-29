@@ -1,0 +1,14 @@
+<apex:page controller="displayAccounts">
+    <apex:form >
+        <apex:pageblock >
+        	<apex:pageBlockTable value="{!accList}" var="acc">
+            	<apex:column headerValue="Accountname">
+                   <apex:outputText value="{!acc.name}"></apex:outputText> 
+                </apex:column>
+                	<apex:column headerValue="Id">
+                   <apex:outputText value="{!acc.phone}"></apex:outputText> 
+                </apex:column>
+            </apex:pageBlockTable>      
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

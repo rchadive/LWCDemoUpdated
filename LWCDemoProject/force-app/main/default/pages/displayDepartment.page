@@ -1,0 +1,10 @@
+<apex:page Controller="displayDepartment" >   
+<apex:pageblock title="Dep Summary">
+    <apex:pageblocktable value="{!ListOut}" var="lo">
+        <apex:column value="{!lo.depname}" headervalue="depname" >
+        </apex:column>
+        <apex:column value="{!lo.Totaldeps}" headervalue="Totaldeps">
+        </apex:column>
+    </apex:pageblocktable>
+</apex:pageblock>          
+</apex:page>

@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	Helloworld
+    <p>This is Paragraph</p>
+    <div><p>This is Paragraph</p></div>
+    <div><p class ="Paragraphcls">This is Paragraph colored</p></div>
+</aura:component>
